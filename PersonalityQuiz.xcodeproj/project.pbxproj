@@ -14,6 +14,7 @@
 		761826DB2048683A00BFDD8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 761826D92048683A00BFDD8A /* LaunchScreen.storyboard */; };
 		76493908204DB0ED000E16F1 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76493907204DB0ED000E16F1 /* QuestionsViewController.swift */; };
 		7649390A204DB137000E16F1 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76493909204DB137000E16F1 /* ResultsViewController.swift */; };
+		76A8E2E1205056A700FB6E74 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A8E2E0205056A700FB6E74 /* QuestionData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		761826DC2048683A00BFDD8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76493907204DB0ED000E16F1 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		76493909204DB137000E16F1 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		76A8E2E0205056A700FB6E74 /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				761826D02048683A00BFDD8A /* AppDelegate.swift */,
 				761826D22048683A00BFDD8A /* InitialViewController.swift */,
 				761826D42048683A00BFDD8A /* Main.storyboard */,
+				76A8E2E0205056A700FB6E74 /* QuestionData.swift */,
 				76493909204DB137000E16F1 /* ResultsViewController.swift */,
 				76493907204DB0ED000E16F1 /* QuestionsViewController.swift */,
 				761826D72048683A00BFDD8A /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 			files = (
 				761826D32048683A00BFDD8A /* InitialViewController.swift in Sources */,
 				761826D12048683A00BFDD8A /* AppDelegate.swift in Sources */,
+				76A8E2E1205056A700FB6E74 /* QuestionData.swift in Sources */,
 				76493908204DB0ED000E16F1 /* QuestionsViewController.swift in Sources */,
 				7649390A204DB137000E16F1 /* ResultsViewController.swift in Sources */,
 			);
