@@ -23,6 +23,8 @@ class QuestionsViewController: UIViewController {
     
     @IBOutlet weak var rangedStackView: UIStackView!
     
+    var questionIndex = 0
+    
     
     var questions: [Question] = [
         Question(text: "Which food do you like the most?",
@@ -60,6 +62,23 @@ class QuestionsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    
+    func updateUI() {
+        singleStackView.isHidden = true
+        multipleStackView.isHidden = true
+        rangedStackView.isHidden = true
+        
+        let currentQuestion = questions[questionIndex]
+        let currentAnswers = currentQuestion.answers
+        
+        let totalProgress = Float(questionIndex) / Float(questions.count)
+        
+        navigationItem.title = "Question #\(questionIndex + 1)"
+        QuestionLabel.text = currentQuestion.text
+        progressBar.setProgress(totalProgress, animated: true)
+        
     }
     
     
