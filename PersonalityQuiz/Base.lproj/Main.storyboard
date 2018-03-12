@@ -89,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-342" y="34"/>
+            <point key="canvasLocation" x="-406" y="34"/>
         </scene>
         <!--Questions View Controller-->
         <scene sceneID="YMA-cy-i5I">
@@ -245,9 +245,19 @@
                     <navigationItem key="navigationItem" id="ldU-mh-Sn7"/>
                     <connections>
                         <outlet property="QuestionLabel" destination="jML-Ti-OpH" id="3Wh-zF-tWZ"/>
+                        <outlet property="SingleButton1" destination="KJm-i7-ACO" id="h55-Oy-jQV"/>
+                        <outlet property="multipleLabel1" destination="OQv-wy-tfV" id="QZK-1v-WMS"/>
+                        <outlet property="multipleLabel2" destination="yCy-6p-ViD" id="d2K-B1-3Us"/>
+                        <outlet property="multipleLabel3" destination="NgH-CU-GWy" id="jjc-7J-HIV"/>
+                        <outlet property="multipleLabel4" destination="bMh-fE-E6z" id="D9V-wl-CmH"/>
                         <outlet property="multipleStackView" destination="W7F-Wh-QZQ" id="5Ez-gL-bDD"/>
                         <outlet property="progressBar" destination="BDf-op-zEg" id="DFt-7U-UoB"/>
+                        <outlet property="rangedLabel1" destination="RYw-NK-cW7" id="O2l-tY-6EI"/>
+                        <outlet property="rangedLabel2" destination="Pq5-Fn-2M8" id="s2i-CX-kMG"/>
                         <outlet property="rangedStackView" destination="PH9-dd-Nse" id="pkK-pg-4g4"/>
+                        <outlet property="singleButton2" destination="k81-Kx-WE2" id="DeW-jX-MXD"/>
+                        <outlet property="singleButton3" destination="koB-78-SkE" id="qVY-0x-XxZ"/>
+                        <outlet property="singleButton4" destination="5Ty-CB-E46" id="1CE-Gi-hLH"/>
                         <outlet property="singleStackView" destination="EB9-M2-qGO" id="Act-39-Hsi"/>
                         <segue destination="YFe-TJ-MPV" kind="show" id="Dyj-As-H0E"/>
                     </connections>
