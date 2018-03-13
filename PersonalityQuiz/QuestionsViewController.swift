@@ -79,6 +79,10 @@ class QuestionsViewController: UIViewController {
         QuestionLabel.text = currentQuestion.text
         progressBar.setProgress(totalProgress, animated: true)
         
+        
+        
+        
+        
     }
     
     
