@@ -161,27 +161,42 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Hh-6n-kdG">
                                         <rect key="frame" x="0.0" y="204" width="375" height="30"/>
                                         <state key="normal" title="Submit Answer "/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed:" destination="PEC-j3-WUY" eventType="touchUpInside" id="IYb-o9-Jaz"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EB9-M2-qGO">
-                                <rect key="frame" x="20" y="213" width="46" height="180"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EB9-M2-qGO">
+                                <rect key="frame" x="20" y="243.5" width="46" height="180"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJm-i7-ACO">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJm-i7-ACO">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="SingleAnswerButtonPressed:" destination="PEC-j3-WUY" eventType="touchUpInside" id="2fK-Yt-EJG"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k81-Kx-WE2">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k81-Kx-WE2">
                                         <rect key="frame" x="0.0" y="50" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="SingleAnswerButtonPressed:" destination="PEC-j3-WUY" eventType="touchUpInside" id="3x4-uQ-23g"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koB-78-SkE">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koB-78-SkE">
                                         <rect key="frame" x="0.0" y="100" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="SingleAnswerButtonPressed:" destination="PEC-j3-WUY" eventType="touchUpInside" id="655-iF-XAb"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ty-CB-E46">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ty-CB-E46">
                                         <rect key="frame" x="0.0" y="150" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="SingleAnswerButtonPressed:" destination="PEC-j3-WUY" eventType="touchUpInside" id="05G-95-fS5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -211,6 +226,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1R-9v-rJU">
                                         <rect key="frame" x="0.0" y="90.5" width="375" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed" destination="PEC-j3-WUY" eventType="touchUpInside" id="7Ub-gL-cwR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -228,6 +246,7 @@
                         <constraints>
                             <constraint firstItem="rI8-iS-OpD" firstAttribute="trailing" secondItem="PH9-dd-Nse" secondAttribute="trailing" id="5fF-2w-I1e"/>
                             <constraint firstItem="rI8-iS-OpD" firstAttribute="trailing" secondItem="W7F-Wh-QZQ" secondAttribute="trailing" id="AzZ-QC-SCs"/>
+                            <constraint firstItem="EB9-M2-qGO" firstAttribute="centerY" secondItem="VwJ-co-vTU" secondAttribute="centerY" id="GXV-GP-pus"/>
                             <constraint firstItem="rI8-iS-OpD" firstAttribute="trailing" secondItem="jML-Ti-OpH" secondAttribute="trailing" id="UkN-gI-PTq"/>
                             <constraint firstItem="rI8-iS-OpD" firstAttribute="bottom" secondItem="BDf-op-zEg" secondAttribute="bottom" constant="20" id="V79-38-kxm"/>
                             <constraint firstItem="BDf-op-zEg" firstAttribute="leading" secondItem="VwJ-co-vTU" secondAttribute="leadingMargin" id="Z6A-i7-XYR"/>
@@ -246,6 +265,10 @@
                     <connections>
                         <outlet property="QuestionLabel" destination="jML-Ti-OpH" id="3Wh-zF-tWZ"/>
                         <outlet property="SingleButton1" destination="KJm-i7-ACO" id="h55-Oy-jQV"/>
+                        <outlet property="multiSwitch1" destination="5FP-je-yKM" id="tEz-ej-BHE"/>
+                        <outlet property="multiSwitch2" destination="Zxd-1N-ciC" id="dzO-wh-OHX"/>
+                        <outlet property="multiSwitch3" destination="Ldk-ng-j19" id="Pgu-1e-Mep"/>
+                        <outlet property="multiSwitch4" destination="0RV-5K-dZA" id="hkQ-xT-fER"/>
                         <outlet property="multipleLabel1" destination="OQv-wy-tfV" id="QZK-1v-WMS"/>
                         <outlet property="multipleLabel2" destination="yCy-6p-ViD" id="d2K-B1-3Us"/>
                         <outlet property="multipleLabel3" destination="NgH-CU-GWy" id="jjc-7J-HIV"/>
@@ -254,12 +277,13 @@
                         <outlet property="progressBar" destination="BDf-op-zEg" id="DFt-7U-UoB"/>
                         <outlet property="rangedLabel1" destination="RYw-NK-cW7" id="O2l-tY-6EI"/>
                         <outlet property="rangedLabel2" destination="Pq5-Fn-2M8" id="s2i-CX-kMG"/>
+                        <outlet property="rangedSlider" destination="faX-vB-Uem" id="F5z-IL-ZS2"/>
                         <outlet property="rangedStackView" destination="PH9-dd-Nse" id="pkK-pg-4g4"/>
                         <outlet property="singleButton2" destination="k81-Kx-WE2" id="DeW-jX-MXD"/>
                         <outlet property="singleButton3" destination="koB-78-SkE" id="qVY-0x-XxZ"/>
                         <outlet property="singleButton4" destination="5Ty-CB-E46" id="1CE-Gi-hLH"/>
                         <outlet property="singleStackView" destination="EB9-M2-qGO" id="Act-39-Hsi"/>
-                        <segue destination="YFe-TJ-MPV" kind="show" id="Dyj-As-H0E"/>
+                        <segue destination="YFe-TJ-MPV" kind="show" identifier="ResultsSegue" id="Dyj-As-H0E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qfy-wJ-7lV" userLabel="First Responder" sceneMemberID="firstResponder"/>
