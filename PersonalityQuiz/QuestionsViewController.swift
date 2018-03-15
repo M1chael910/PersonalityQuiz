@@ -38,6 +38,7 @@ class QuestionsViewController: UIViewController {
     @IBOutlet weak var multiSwitch4: UISwitch!
     
     
+    
     @IBOutlet weak var rangedSlider: UISlider!
     
     
@@ -108,6 +109,7 @@ class QuestionsViewController: UIViewController {
     @IBAction func rangedAnswerButtonPressed() {
         let currentAnswers = questions[questionIndex].answers
         let index = Int(round(rangedSlider.value * Float(currentAnswers.count - 1)))
+        
         answersChosen.append(currentAnswers[index])
         
         nextQuestion()
@@ -176,6 +178,7 @@ class QuestionsViewController: UIViewController {
     }
     func updateRangedStack(using answers: [Answer]) {
         rangedStackView.isHidden = false
+        rangedSlider.setValue(0.5, animated: false)
         rangedLabel1.text = answers.first?.text
         rangedLabel2.text = answers.last?.text
     }
@@ -194,44 +197,25 @@ class QuestionsViewController: UIViewController {
     
     func updateMultipleStack(using answers: [Answer]) {
         multipleStackView.isHidden = false
+        multiSwitch1.isOn = false
+        multiSwitch2.isOn = false
+        multiSwitch3.isOn = false
+        multiSwitch4.isOn = false
         multipleLabel1.text = answers[0].text
         multipleLabel2.text = answers[1].text
         multipleLabel3.text = answers[2].text
         multipleLabel4.text = answers[3].text
+        
     }
     
-   
-    
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-   
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "ResultsSegue" {
+            let resultsViewController = segue.destination as! ResultsViewController
+            resultsViewController.responses = answersChosen
+        }
     }
-    */
+    
+    
+    
 
 }
