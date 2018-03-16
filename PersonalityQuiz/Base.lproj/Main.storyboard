@@ -162,7 +162,7 @@
                                         <rect key="frame" x="0.0" y="204" width="375" height="30"/>
                                         <state key="normal" title="Submit Answer "/>
                                         <connections>
-                                            <action selector="multipleAnswerButtonPressed:" destination="PEC-j3-WUY" eventType="touchUpInside" id="IYb-o9-Jaz"/>
+                                            <action selector="WhenMultipleButtonPressed" destination="PEC-j3-WUY" eventType="touchUpInside" id="tDr-e2-oEk"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -299,16 +299,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d0x-1h-pdB">
-                                <rect key="frame" x="129" y="293.5" width="117" height="80.5"/>
+                                <rect key="frame" x="0.0" y="303" width="0.0" height="62.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QG4-Yl-N1j">
-                                        <rect key="frame" x="0.0" y="0.0" width="117" height="60"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <rect key="frame" x="146.5" y="0.0" width="82.5" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqq-lk-iaS">
-                                        <rect key="frame" x="37.5" y="60" width="42" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqq-lk-iaS">
+                                        <rect key="frame" x="0.0" y="42" width="0.0" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -319,15 +319,26 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="d0x-1h-pdB" firstAttribute="centerX" secondItem="pUu-6e-Laq" secondAttribute="centerX" id="X4K-TJ-TE1"/>
+                            <constraint firstItem="d0x-1h-pdB" firstAttribute="centerY" secondItem="pUu-6e-Laq" secondAttribute="centerY" id="XTt-LW-7Of"/>
                             <constraint firstItem="d0x-1h-pdB" firstAttribute="centerY" secondItem="pUu-6e-Laq" secondAttribute="centerY" id="ifD-OU-ihF"/>
+                            <constraint firstItem="d0x-1h-pdB" firstAttribute="centerX" secondItem="pUu-6e-Laq" secondAttribute="centerX" id="w4L-vG-pCZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pqI-Ab-sMS"/>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="zZ1-Lz-uju">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="DNH-KG-Cjg"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="DNH-KG-Cjg">
+                            <connections>
+                                <segue destination="hj5-qR-wUu" kind="unwind" unwindAction="unwindToMainScreenForSegue:" id="fnl-OH-hwX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="QG4-Yl-N1j" id="HoY-3m-Wgx"/>
+                        <outlet property="resultDefinitionLabel" destination="Bqq-lk-iaS" id="aRd-XY-xhk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hcc-cO-c1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hj5-qR-wUu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2020" y="33.733133433283363"/>
         </scene>

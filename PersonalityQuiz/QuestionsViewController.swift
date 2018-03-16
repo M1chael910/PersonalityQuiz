@@ -87,9 +87,20 @@ class QuestionsViewController: UIViewController {
     }
     
     
-    @IBAction func multipleAnswerButtonPressed() {
-    let currentAnswers = questions[questionIndex].answers
     
+    
+    @IBAction func rangedAnswerButtonPressed() {
+        let currentAnswers = questions[questionIndex].answers
+        let index = Int(round(rangedSlider.value * Float(currentAnswers.count - 1)))
+        
+        answersChosen.append(currentAnswers[index])
+        
+        nextQuestion()
+    }
+    
+    @IBAction func WhenMultipleButtonPressed() {
+        let currentAnswers = questions[questionIndex].answers
+        
         if multiSwitch1.isOn {
             answersChosen.append(currentAnswers[0])
         }
@@ -106,14 +117,7 @@ class QuestionsViewController: UIViewController {
         nextQuestion()
     }
     
-    @IBAction func rangedAnswerButtonPressed() {
-        let currentAnswers = questions[questionIndex].answers
-        let index = Int(round(rangedSlider.value * Float(currentAnswers.count - 1)))
-        
-        answersChosen.append(currentAnswers[index])
-        
-        nextQuestion()
-    }
+    
     
     
     func nextQuestion() {

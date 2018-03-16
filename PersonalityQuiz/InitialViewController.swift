@@ -15,6 +15,7 @@ class InitialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
     
     @IBAction func beginButtonPressed(_ sender: UIButton) {
@@ -25,7 +26,10 @@ class InitialViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
+    @IBAction func unwindToMainScreen(forSegue: UIStoryboardSegue) {
+        
+    }
 }
 
